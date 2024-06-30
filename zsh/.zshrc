@@ -24,7 +24,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 #------------------------------
 # History stuff
 #------------------------------
-HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase

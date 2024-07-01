@@ -96,6 +96,7 @@ alias ll="ls --color -lh"
 alias l="ls -alFh --color"
 alias grep="grep -i --color"
 alias spm="sudo pacman"
+alias ssc="sudo systemctl"
 
 # Shell integrations
 eval "$(fzf --zsh)"

@@ -2,6 +2,7 @@ syntax on
 filetype plugin indent on
 set nocompatible
 set number
+set relativenumber
 set ruler
 set encoding=utf-8
 set tabstop=4

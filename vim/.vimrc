@@ -13,7 +13,7 @@ set hlsearch
 set incsearch
 set showmatch
 set nobackup
-set clipboard=unnamedplus
+set clipboard=unnamed
 set nobackup
 colorscheme evening
 

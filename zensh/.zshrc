@@ -34,11 +34,11 @@ zinit light Aloxaf/fzf-tab
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
+#zinit snippet OMZP::archlinux
 #zinit snippet OMZP::aws
 #zinit snippet OMZP::kubectl
 #zinit snippet OMZP::kubectx
-zinit snippet OMZP::command-not-found
+#zinit snippet OMZP::command-not-found
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -69,8 +69,8 @@ export LS_COLORS
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -G $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls -G $realpath'
 
 # Keybindings
 bindkey -v
@@ -91,12 +91,13 @@ bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 
 # Aliases
-alias ls="ls --color -F"
-alias ll="ls --color -lh"
-alias l="ls -alFh --color"
-alias grep="grep -i --color"
-alias spm="sudo pacman"
-alias ssc="sudo systemctl"
+alias ls="ls -G -F"
+alias ll="ls -G -lh"
+alias la="ls -G -A"
+alias l="ls -alFh -G"
+alias grep="grep -i -G"
+#alias spm="sudo pacman"
+#alias ssc="sudo systemctl"
 
 # Shell integrations
 eval "$(fzf --zsh)"

@@ -93,6 +93,7 @@ bindkey '^[w' kill-region
 # Aliases
 alias ls="ls --color -F"
 alias ll="ls --color -lh"
+alias la="ls --color -A"
 alias l="ls -alFh --color"
 alias grep="grep -i --color"
 alias spm="sudo pacman"

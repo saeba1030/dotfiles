@@ -37,7 +37,7 @@
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.incsearch": true,
-    "vim.normalModeKeyBindings": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["K"],
             "commands": ["editor.action.showHover"]
@@ -45,6 +45,18 @@
         {
             "before": ["<leader>", "m"],
             "commands": ["workbench.action.toggleMaximizeEditorGroup"]
+        },
+        // delete without overwriting register
+        {
+            "before": ["d"],
+            "after": ["\"", "_", "d"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // paste without overwriting register
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
         }
     ],
 
@@ -54,5 +66,7 @@
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+
+    "cmake.configureOnOpen": false
 }

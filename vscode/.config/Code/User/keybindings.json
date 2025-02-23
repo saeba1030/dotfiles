@@ -1,8 +1,8 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl + j",
-        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+n",
@@ -19,6 +19,11 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
         "key": "r",
         "command": "renameFile",
         "when": "filesExplorerFocus && !inputFocus"
@@ -26,6 +31,11 @@
     {
         "key": "c",
         "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -37,5 +47,28 @@
         "key": "d",
         "command": "deleteFile",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "space w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space n",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space p",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
     }
 ]

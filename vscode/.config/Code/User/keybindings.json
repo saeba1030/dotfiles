@@ -49,6 +49,11 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
+        "key": "s",
+        "command": "explorer.openToSide",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
     },

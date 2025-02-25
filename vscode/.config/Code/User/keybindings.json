@@ -1,0 +1,79 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "c",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "s",
+        "command": "explorer.openToSide",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "space w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space n",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space p",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    }
+]

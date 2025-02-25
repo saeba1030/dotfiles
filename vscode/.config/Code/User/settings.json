@@ -1,0 +1,72 @@
+{
+    // Configure an extension to execute in a different extension host process.
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.activityBar.location": "top",
+
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.hideOnStartup": "always",
+
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+    // "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.stickyScroll.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.linkedEditing": true,
+
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "hidden",
+    "window.customMenuBarAltFocus": false,
+
+    "vim.useCtrlKeys": true,
+    "vim.handleKeys": {
+        "<C-j>": false,
+        "<C-n>": false,
+        "<C-p>": false
+    },
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<leader>", "m"],
+            "commands": ["workbench.action.toggleMaximizeEditorGroup"]
+        },
+        // delete without overwriting register
+        {
+            "before": ["d"],
+            "after": ["\"", "_", "d"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // paste without overwriting register
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        }
+    ],
+
+    "prettier.tabWidth": 4,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "cmake.configureOnOpen": false
+}

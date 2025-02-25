@@ -16,4 +16,3 @@ set nobackup
 set clipboard=unnamedplus
 set nobackup
 colorscheme evening
-

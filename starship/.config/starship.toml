@@ -1,5 +1,6 @@
 [character]
-success_symbol = "[>](bold green)"
+#success_symbol = "[\uf0a9](bold green)"
+success_symbol = "[\uf178](bold green)"
 error_symbol = "[x](bold red)"
 vimcmd_symbol = "[<](bold green)"
 

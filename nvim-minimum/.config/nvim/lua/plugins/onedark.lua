@@ -3,7 +3,7 @@ return {
 	priority = 100,
 	opts = {
 		style = 'darker',
-		transparent = false
+		transparent = true
 	},
 	init = function()
 		-- vim.cmd('colorscheme ondark');

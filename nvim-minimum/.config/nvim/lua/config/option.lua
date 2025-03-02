@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -11,9 +12,11 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.o.smartindent = true
+vim.o.autoindent = true
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
+vim.o.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true

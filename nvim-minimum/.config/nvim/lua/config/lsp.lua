@@ -17,5 +17,5 @@ end
 -- require("lsp.clangd")
 vim.lsp.enable('clangd')
 vim.lsp.config('clangd', {
-    filetypes = {'c'},
+    filetypes = {'c', 'cpp'},
 })

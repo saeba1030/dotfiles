@@ -14,4 +14,8 @@ on_attach_hook = function(_, bufno)
 end
 
 -- test clangd
-require("lsp.clangd")
+-- require("lsp.clangd")
+vim.lsp.enable('clangd')
+vim.lsp.config('clangd', {
+    filetypes = {'c'},
+})

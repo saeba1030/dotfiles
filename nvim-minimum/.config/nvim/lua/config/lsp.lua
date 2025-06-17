@@ -1,5 +1,5 @@
-vim.lsp.enable('clangd')
-vim.lsp.enable('lua_ls')
+vim.lsp.enable 'clangd'
+vim.lsp.enable 'lua_ls'
 
 --[[
 GLOBAL DEFAULTS
@@ -36,6 +36,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	if client:supports_method('textDocument/completion') then
 	    vim.lsp.completion.enable(true, client.id, args.buf, {autotrigger = true})
 	end
+
+	vim.diagnostic.config { virtual_text = true, }
 
     end,
 })

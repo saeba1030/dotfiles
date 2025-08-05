@@ -3,6 +3,7 @@ vim.g.maplocalleader = "\\"
 
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.o.winborder = "rounded"
 
 -- [[ Setting options ]]
 -- See `:help vim.o`

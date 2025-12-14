@@ -46,6 +46,18 @@
             "before": ["<leader>", "m"],
             "commands": ["workbench.action.toggleMaximizeEditorGroup"]
         },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.action.nextEditorInGroup"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["workbench.action.previousEditorInGroup"]
+        },
         // delete without overwriting register
         {
             "before": ["d"],

@@ -61,19 +61,20 @@
         "key": "ctrl+alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
-    {
-        "key": "space w",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "key": "space n",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "key": "space p",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
-    }
+    // DO NOT USE, since it will break the vim.leader keybinding.
+    //{
+    //    "key": "space w",
+    //    "command": "workbench.action.closeActiveEditor",
+    //    "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    //},
+    //{
+    //    "key": "space n",
+    //    "command": "workbench.action.nextEditorInGroup",
+    //    "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    //},
+    //{
+    //    "key": "space p",
+    //    "command": "workbench.action.previousEditorInGroup",
+    //    "when": "vim.mode=='Normal' && (editorTextFocus || !inputFocus)"
+    //}
 ]
